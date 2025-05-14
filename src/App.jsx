@@ -56,8 +56,8 @@ let auth = btoa(`${username}:${password}`)
             )}
           </aside>
 
-          <section className='   overflow-hidden max-h-[88vh]'>
-            <div className='max-h-[86vh] overflow-scroll space-y-6'>
+          <section className='   overflow-hidden lg:max-h-[88vh]'>
+            <div className='lg:max-h-[86vh] overflow-scroll space-y-6'>
               <div
                 className={`${
                   loading && 'h-[40vh]'
@@ -84,8 +84,8 @@ let auth = btoa(`${username}:${password}`)
             </div>
           </section>
 
-          <aside className=' overflow-hidden max-h-[88vh]'>
-            <div className='max-h-[86vh] overflow-scroll space-y-6'>
+          <aside className=' overflow-hidden lg:max-h-[88vh]'>
+            <div className='lg:max-h-[86vh] overflow-scroll space-y-6'>
               <div
                 className={`${
                   loading && 'h-[60vh]'

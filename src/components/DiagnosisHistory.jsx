@@ -44,23 +44,32 @@ const DiagnosisHistory = ({ data }) => {
     <div className=''>
       <div className='flex justify-between items-center mb-6 '>
         <p className='manrope-bold text-lg '>Diagnosis History</p>
-        <div>
+        <div className='md:block hidden'>
           Month:
           <select
             onChange={(e) => setSelectedMonth(e.target.value)}
             className='border cursor-pointer border-[#C4C4C4] rounded-lg p-2 ml-2 outline-none'
           >
             {selectedPatient?.diagnosis_history?.map((item, index) => (
-              <option
-                
-                key={index}
-                value={item?.month}
-              >
+              <option key={index} value={item?.month}>
                 {item?.month}, {item?.year}
               </option>
             ))}
           </select>
         </div>
+      </div>
+      <div className='md:hidden block mb-4'>
+        Month:
+        <select
+          onChange={(e) => setSelectedMonth(e.target.value)}
+          className='border cursor-pointer border-[#C4C4C4] rounded-lg p-2 ml-2 outline-none'
+        >
+          {selectedPatient?.diagnosis_history?.map((item, index) => (
+            <option key={index} value={item?.month}>
+              {item?.month}, {item?.year}
+            </option>
+          ))}
+        </select>
       </div>
       <BloodPressureChart />
       <div className='grid md:flex md:grid-cols-3 justify-between gap-4  grid-cols-1  w-full'>
