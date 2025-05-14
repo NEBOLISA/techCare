@@ -11,7 +11,7 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen, home, patients, calendar, me
         isSidebarOpen
           ? 'opacity-100 visible  transition-opacity duration-300 ease-in-out'
           : 'opacity-0 invisible   transition-opacity duration-300 ease-in-out'
-      } bg-black/50 transition-all duration-400 ease-in-out absolute top-0 left-0 bottom-0  w-full h-screen flex justify-end`}
+      } bg-black/50 transition-all duration-400 ease-in-out top-0 left-0 bottom-0  w-full h-screen flex justify-end z-30 fixed  `}
     >
       <div className='fixed top-0  transition-all duration-300 ease-in-out left-0 w-2/3 h-screen bg-white shadow-lg p-4'>
         <IoClose
@@ -20,7 +20,7 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen, home, patients, calendar, me
           }}
           className='absolute top-4 right-4 w-7 h-7'
         />
-        <img src={logo} alt='appLogo'  className='sm:w-40 w-29' />
+        <img src={logo} alt='appLogo' className='sm:w-40 w-29' />
         <ul className='flex gap-8 flex-col mt-10'>
           <li
             onClick={() => handleTabClick('overview')}
@@ -34,7 +34,6 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen, home, patients, calendar, me
             <img
               src={home}
               alt='homeIcon'
-              
               className='w-6 h-6  inline-block sm:mr-6 mr-3'
             />
             Overview
@@ -66,7 +65,6 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen, home, patients, calendar, me
             <img
               src={calendar}
               alt='calendarIcon'
-              
               className='w-6 h-6  inline-block sm:mr-6 mr-3'
             />
             Schedule
@@ -82,7 +80,6 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen, home, patients, calendar, me
             <img
               src={message}
               alt='messageIcon'
-            
               className='w-6 h-6  inline-block sm:mr-6 mr-3'
             />
             Message
@@ -98,15 +95,23 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen, home, patients, calendar, me
             <img
               src={transactions}
               alt='transcationsIcon '
-            
               className='w-6 h-6  inline-block sm:mr-6 mr-3'
             />
             Transactions
           </li>
         </ul>
         <div className='flex items-center justify-between mt-10 absolute right-3 left-3 bottom-5'>
-          <img src={settings} alt='settingsIcon' className='cursor-pointer w-6 h-6' />
-          <img src={more} alt='moreIcon' srcset='' className='cursor-pointer w-6 h-6' />
+          <img
+            src={settings}
+            alt='settingsIcon'
+            className='cursor-pointer w-6 h-6'
+          />
+          <img
+            src={more}
+            alt='moreIcon'
+            srcset=''
+            className='cursor-pointer w-6 h-6'
+          />
         </div>
       </div>
     </div>

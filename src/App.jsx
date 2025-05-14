@@ -43,9 +43,9 @@ let auth = btoa(`${username}:${password}`)
     <>
       <ToastContainer position='top-right' autoClose={3000} />
       {error && toast.error(error)}
-      <div className='bg-[#F6F7F8] sm:p-4 p-1  lg:overflow-y-hidden h-[100vh]'>
+      <div className='bg-[#F6F7F8]  p-1   lg:overflow-y-hidden h-[100vh]'>
         <Navbar />
-        <main className='grid grid-cols-1 lg:grid-cols-[300px_1fr_280px] min-h-screen gap-4 sm:p-4 bg-gray-50 px-0 py-3'>
+        <main className='grid mt-16 grid-cols-1 lg:grid-cols-[300px_1fr_280px] min-h-screen gap-4 sm:p-4 bg-gray-50 px-0 py-3'>
           <aside className='   bg-white rounded-xl shadow py-4 pb-0 overflow-hidden  max-h-[85vh] '>
             {loading ? (
               <div className='flex justify-center items-center h-full'>
