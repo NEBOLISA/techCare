@@ -36,8 +36,8 @@ const BloodPressureChart = () => {
             data={graphData}
             margin={{ top: 5, right: 20, bottom: 5, left: 0 }}
           >
-            <Line type='monotone' dataKey='systolic' stroke='#C26EB4' />
-            <Line type='monotone' dataKey='diastolic' stroke='#7E6CAB' />
+            <Line type='monotone' dataKey='systolic' stroke='#C26EB4' strokeWidth={2} />
+                      <Line type='monotone' dataKey='diastolic' stroke='#7E6CAB' strokeWidth={2} />
 
             <CartesianGrid stroke='#ccc' strokeDasharray='5 5' />
             <XAxis dataKey='date' />
