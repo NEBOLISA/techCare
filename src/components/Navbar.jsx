@@ -23,7 +23,7 @@ const Navbar = () => {
       setIsSidebarOpen(true)
     }
   return (
-    <div className='bg-white p-4 h-16 sm:rounded-4xl mt-2   flex justify-between items-center shadow-sm manrope-light fixed top-0 left-0 right-0 sm:left-4 sm:right-4  z-50'>
+    <div className='bg-white p-4 h-16 sm:rounded-4xl sm:mt-2   flex justify-between items-center shadow-sm manrope-light fixed top-0 left-0 right-0 sm:left-4 sm:right-4  z-50'>
       {/* Logo */}
      
         <Sidebar setIsSidebarOpen={setIsSidebarOpen} isSidebarOpen={isSidebarOpen} home={home} patients={patients} calendar={calendar} message={message} transactions={transactions} jessica={jessica} settings={settings} more={more} activeTab={activeTab} handleTabClick={handleTabClick}   />
