@@ -35,7 +35,7 @@ const Navbar = () => {
           onClick={handleOpenSidebar}
         />
 
-        <img src={logo} alt='appLogo' srcset='' className='sm:w-32 w-29' />
+        <img src={logo} alt='appLogo'  className='sm:w-32 w-29' />
       </div>
 
       {/* NavLinks */}
@@ -53,7 +53,7 @@ const Navbar = () => {
             <img
               src={home}
               alt='homeIcon'
-              srcset=''
+             
               className='w-4 h-4 inline-block mr-2'
             />
             Overview
@@ -70,7 +70,7 @@ const Navbar = () => {
             <img
               src={patients}
               alt='patientsIcon'
-              srcset=''
+           
               className='w-4 h-4 inline-block mr-2'
             />
             Patients
@@ -86,7 +86,7 @@ const Navbar = () => {
             <img
               src={calendar}
               alt='calendarIcon'
-              srcset=''
+             
               className='w-4 h-4 inline-block mr-2'
             />
             Schedule
@@ -102,7 +102,7 @@ const Navbar = () => {
             <img
               src={message}
               alt='messageIcon'
-              srcset=''
+             
               className='w-4 h-4 inline-block mr-2'
             />
             Message
@@ -118,7 +118,7 @@ const Navbar = () => {
             <img
               src={transactions}
               alt='transactionsIcon'
-              srcset=''
+       
               className='w-4 h-4 inline-block mr-2'
             />
             Transactions
@@ -132,7 +132,7 @@ const Navbar = () => {
           <img
             src={jessica}
             alt='profileImage'
-            srcset=''
+        
             className='w-10 h-10 rounded-full'
           />
         </div>

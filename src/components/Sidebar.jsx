@@ -109,7 +109,6 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen, home, patients, calendar, me
           <img
             src={more}
             alt='moreIcon'
-            srcset=''
             className='cursor-pointer w-6 h-6'
           />
         </div>
