@@ -22,7 +22,7 @@ const TableList = ({data}) => {
         </thead>
 
         {data?.map((item,index) => (
-          <tbody key={index} class='divide-y divide-gray-200 text-gray-700  '>
+          <tbody key={index} className='divide-y divide-gray-200 text-gray-700  '>
             <tr>
               <td className='px-6 py-3'>{item?.name}</td>
               <td className='px-6 py-3'>{item?.description}</td>

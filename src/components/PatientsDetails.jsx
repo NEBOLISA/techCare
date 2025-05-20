@@ -42,7 +42,7 @@ const PatientsDetails = () => {
         <img
           src={selectedPatient?.profile_picture}
           alt='profileImage'
-          srcset=''
+       
           className='w-34 h-34 rounded-full'
         />
         <p className=' manrope-bold text-lg mt-4'>{selectedPatient?.name}</p>
